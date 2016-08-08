@@ -1,8 +1,8 @@
 package cg
 
-//import (
-//	"fmt"
-//)
+import "fmt"
+
+
 
 type Room struct {
 	Name string "name"

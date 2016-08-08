@@ -1,11 +1,14 @@
-package golang
+package main
 
 import "fmt"
 
 func MyPrintf(args ...interface{}) {
+	//for index, arg := range args {//_ represent index
 	for _, arg := range args {
+		//fmt.Println(index, "type index")
 		switch arg.(type) {
 		case int:
+
 			fmt.Println(arg, "is an int value.")
 		case string:
 			fmt.Println(arg, "is a string value.")

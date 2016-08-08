@@ -4,7 +4,7 @@ package main
 /*
 #include <stdlib.h>
 */
-import "C"
+import "C" //  包含的头文件和import statement中间不能带空行
 
 
 import "fmt"
