@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func mainc() {
+func main() {
 	cha := make(chan int, 1)
 	for {
 		select {
