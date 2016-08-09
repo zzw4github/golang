@@ -3,7 +3,7 @@ package main
 import "time"
 import "fmt"
 
-func maino() {
+func main() {
 	// 首先，我们实现并执行一个匿名的超时等待函数
 	timeout := make(chan bool, 1)
 	ch := make(chan bool, 1)

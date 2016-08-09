@@ -12,7 +12,7 @@ func Count(lock *sync.Mutex) {
 	fmt.Println(counter)
 	lock.Unlock()
 }
-func maina() {
+func main() {
 	lock := &sync.Mutex{}
 	for i := 0; i < 10; i++ {
 		go Count(lock)
