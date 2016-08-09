@@ -13,8 +13,8 @@ func TestOps(t *testing.T) {
 		t.Error("NewMusicManager failed, not empty.")
 	}
 	m0 := &MusicEntry{
-		"1", "My Heart Will Go On", "Celion Dion", Pop,
-		"http://qbox.me/24501234", MP3}
+		"1", "My Heart Will Go On", "Celion Dion", "Pop",
+		"http://qbox.me/24501234", "MP3"}
 	mm.Add(m0)
 	if mm.Len() != 1 {
 		t.Error("MusicManager.Add() failed.")

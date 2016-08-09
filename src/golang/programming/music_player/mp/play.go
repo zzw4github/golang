@@ -1,6 +1,8 @@
 package mp
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Player interface {
 	Play(source string)

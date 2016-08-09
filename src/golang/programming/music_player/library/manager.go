@@ -15,6 +15,7 @@ type MusicEntry struct {
 	Artist string
 	Source string
 	Type   string
+	Genre  string
 }
 type MusicManager struct {
 	musics []MusicEntry

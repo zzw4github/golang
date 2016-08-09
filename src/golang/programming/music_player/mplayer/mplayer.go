@@ -4,10 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"pkg/mplayer/mlib"
-	"pkg/mplayer/mp"
 	"strconv"
 	"strings"
+	"golang/programming/music_player/library"
+	"golang/programming/music_player/mp"
 )
 
 var lib *library.MusicManager
@@ -26,14 +26,14 @@ func handleLibCommands(tokens []string) {
 			if len(tokens) == 6 {
 				id++
 				lib.Add(&library.MusicEntry{strconv.Itoa(id),
-					tokens[2], tokens[3], tokens[4], tokens[5]})
+					tokens[2] ,tokens[3], tokens[4], tokens[5],"MP3"})
 			} else {
 				fmt.Println("USAGE: lib add <name><artist><source><type>")
 			}
 		}
 	case "remove":
 		if len(tokens) == 3 {
-			lib.RemoveByName(tokens[2])
+			//lib.Remove(tokens[0])
 		} else {
 			fmt.Println("USAGE: lib remove <name>")
 		}
@@ -51,7 +51,8 @@ func handlePlayCommand(tokens []string) {
 		fmt.Println("The music", tokens[1], "does not exist.")
 		return
 	}
-	mp.Play(e.Source, e.Type, ctrl, signal)
+	mp.Play(e.Source, e.Type) //调用 mp play.go 下的 play.go?
+	//mp.Play(e.Source, e.Type, ctrl, signal)
 }
 func main() {
 	fmt.Println(`

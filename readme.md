@@ -5,6 +5,9 @@
 - package main 下的main函数才是主函数 args下main.go 原来是 package args  go文件不能运行，改成 package main后可以。
 - debug 有的go能debug，有的不能
 
+-music_play 要可执行需要将项目添加到GOPATH下，不然 mplayer.go 导入不了library
+-mplayer.go remove 执行不了，参数类型不正确。
+
 关于gopath的设置之类的文章很多，看官自行go. 这里要在另外一个角度去解说gopath. 在我们以前熟悉的各种语言中都有这样几个概念： 系统路径,官方包路径,第三方包路径,项目路径。
 
 好了go中只有两个路径.
