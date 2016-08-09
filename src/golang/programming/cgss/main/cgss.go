@@ -2,8 +2,8 @@ package main
 
 import (
 	"bufio"
-	"cgss/cg"
-	"cgss/ipc"
+	"golang/programming/cgss/cg"
+	"golang/programming/cgss/ipc"
 	"fmt"
 	"os"
 	"strconv"

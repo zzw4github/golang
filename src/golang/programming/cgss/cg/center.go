@@ -1,7 +1,7 @@
 package cg
 
 import (
-	"cgss/ipc"
+	"golang/programming/cgss/ipc"
 	"encoding/json"
 	"errors"
 	"sync"
